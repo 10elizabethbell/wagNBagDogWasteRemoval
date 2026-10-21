@@ -17,6 +17,15 @@
         "value": "rgb(247, 243, 236)",
         "createdAt": "2026-10-21T15:52:33.987Z",
         "reason": "pitch-site calm style requires an off-white paper ground; warm tint taken from the client's logo whites (Ellie's house style, not a reflex)"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T15:59:58.415Z",
+        "reason": "false positive: detector counts only fixed UI sizes (11-20px); the hierarchy comes from clamp() headings at 30-80px (Claude, pitch-site build triage)"
       }
     ]
   }
