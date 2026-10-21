@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Wag N' Bag Dog Waste Removal · We scoop the poop so you don't have to</title>
-<meta name="description" content="Wag N' Bag Dog Waste Removal. We scoop the poop so you don't have to. Get on our schedule for a cleaner yard all season long. Call or text (609) 467-4064 for a free quote.">
+<title>Wag N&rsquo; Bag Dog Waste Removal · We scoop the poop so you don&rsquo;t have to</title>
+<meta name="description" content="Wag N&rsquo; Bag Dog Waste Removal. We scoop the poop so you don&rsquo;t have to. Get on our schedule for a cleaner yard all season long. Call or text (609) 467-4064 for a free quote.">
 <meta name="theme-color" content="#f7f3ec">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Wag N' Bag Dog Waste Removal · We scoop the poop so you don't have to">
+<meta property="og:title" content="Wag N&rsquo; Bag Dog Waste Removal · We scoop the poop so you don&rsquo;t have to">
 <meta property="og:description" content="Get on our schedule for a cleaner yard all season long. Call or text (609) 467-4064 for a free quote.">
 <meta property="og:url" content="https://10elizabethbell.github.io/wagNBagDogWasteRemoval/">
 <meta property="og:image" content="https://10elizabethbell.github.io/wagNBagDogWasteRemoval/og.jpg">
@@ -15,6 +15,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" as="image" href="img/yard-tall.webp" media="(max-width:759px)">
 <link rel="preload" as="image" href="img/yard-wide.webp" media="(min-width:760px)">
@@ -73,6 +74,7 @@ section{padding:64px 0}
 .head{display:grid;gap:16px;justify-items:start;max-width:640px}
 .lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:38ch}
 .on-brown .lede,.on-deep .lede{color:var(--on-dark-soft)}
+.lede.gap{margin-top:16px}
 
 /* Eyebrow: a few key headings only. A label, not a button. */
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(59,42,14,.07);padding:9px 14px;border-radius:var(--pill)}
@@ -86,6 +88,9 @@ section{padding:64px 0}
 .btn-primary{background:var(--accent);color:var(--ink);border-color:var(--accent)}
 .btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(250,246,238,.75)}
 
+/* Cal Sans sets word spaces tight at small sizes; open them a little */
+.btn,.claims li,.steps b,.fb,.field label,.field legend,.brand b,.tel,.bigtel{word-spacing:.08em}
+
 /* ---------- Header ---------- */
 .top{background:var(--paper);color:var(--ink)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:68px;padding-top:max(8px,env(safe-area-inset-top));padding-bottom:4px}
@@ -93,7 +98,7 @@ section{padding:64px 0}
 .brand img{width:40px;height:40px;border-radius:50%;flex:none}
 .brand .nm{display:flex;flex-direction:column;min-width:0}
 .brand b{font:400 20px/1 var(--display);letter-spacing:.01em;white-space:nowrap}
-.brand span{font:600 10.5px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
+.brand span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
 .tel{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
 .tel svg{width:17px;height:17px;flex:none;color:var(--accent-ink)}
 
@@ -119,7 +124,7 @@ section{padding:64px 0}
 .claims svg{width:40px;height:40px;flex:none;color:var(--accent-ink)}
 .fb{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--brown);color:var(--on-dark);text-decoration:none;font:400 clamp(18px,5vw,21px)/1.2 var(--display);max-width:460px}
 .fb:hover,.fb:focus-visible{outline:none;background:var(--brown);box-shadow:none}
-.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl{display:flex;align-items:center;gap:14px;text-wrap:balance}
 .fb .lbl svg{width:28px;height:28px;flex:none;color:var(--accent)}
 .arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.12);color:var(--on-dark);transition:background-color .2s,color .2s}
 .arrow svg{width:18px;height:18px}
@@ -162,7 +167,7 @@ form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2p
 
 /* ---------- Close ---------- */
 .close .wrap{display:grid;gap:28px}
-.logo-card{width:148px;height:148px;border-radius:50%;background:#fff;display:grid;place-items:center;overflow:hidden}
+.logo-card{width:148px;height:148px;border-radius:50%;background:#fff;box-shadow:0 0 0 6px var(--taupe);display:grid;place-items:center;overflow:hidden}
 .logo-card img{width:148px;height:148px}
 .close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
 .bigtel{display:inline-flex;align-items:center;gap:12px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px;white-space:nowrap}
@@ -180,11 +185,26 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
 .float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:var(--ink);box-shadow:0 10px 28px rgba(46,33,10,.32);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
 .float.on{transform:none}
 .float svg{width:26px;height:26px}
-.float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
+.float:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:50%;box-shadow:0 0 0 6px var(--ink),0 10px 28px rgba(46,33,10,.32)}
 
 /* ---------- Motion: one fade-up, only for things below the first screen ---------- */
 .js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
 .js .rise.below{opacity:0;transform:translateY(12px)}
+
+/* ---------- Phone hero: the dog lands in a clear strip under the buttons ---------- */
+@media (max-width:759px){
+  .hero-copy{padding-bottom:210px}
+  .hero picture img{object-position:50% 100%}
+  .hero::after{background:linear-gradient(180deg,rgba(46,33,10,.84) 0%,rgba(46,33,10,.82) 70%,rgba(46,33,10,.35) 86%,rgba(46,33,10,.25) 100%)}
+}
+@media (max-width:380px){
+  .top .wrap{gap:8px}
+  .brand{gap:8px}
+  .brand img{width:36px;height:36px}
+  .brand b{font-size:18px}
+  .brand span{letter-spacing:.04em}
+  .tel{font-size:16px;gap:5px}
+}
 
 /* ---------- Desktop ---------- */
 @media (min-width:760px){
@@ -192,7 +212,6 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .top .wrap{min-height:80px}
   .brand img{width:48px;height:48px}
   .brand b{font-size:24px}
-  .brand span{font-size:11.5px}
   .tel{font-size:20px}
   section{padding:96px 0}
   .hero-copy{padding-top:104px;padding-bottom:120px}
@@ -205,8 +224,11 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .split{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;column-gap:64px;align-items:start}
   .split .claims{grid-column:2;grid-row:1/3;margin-top:0}
   .split .fb{grid-column:1;grid-row:2}
-  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
-  .ask .head{position:sticky;top:40px}
+  .ask .wrap{justify-items:center}
+  .ask .head{justify-items:center;text-align:center}
+  .ask form{width:100%}
+  .steps span{font-size:17px}
+  .how .steps{margin-top:48px}
   .close .wrap{grid-template-columns:auto 1fr auto;gap:48px;align-items:center}
   .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
   .steps b{font-size:22px}
@@ -234,10 +256,10 @@ footer a:hover{color:var(--accent)}
 </head>
 <body>
 <!--
-THESIS: A small, friendly pet-waste crew that earns trust the way their own posts do: warm, plain and a little playful. One claim in their own words (we scoop the poop so you don't have to), three plain promises, and an easy way to get on the schedule by text.
-OWN-WORLD: Their own logo: the umber paw (#523c16) and taupe stripes (#cdc2b2) on warm paper (#f7f3ec), with a deeper umber (#33260d, faint diagonal lines) for dark bands and one caramel accent (#e8a64a, fills only; #8a520f as text on light). Cal Sans display, system body at 16/1.7. Kept clearly apart from NJ Scatman's green and mustard.
-STORY: The visitor sees who scoops (Wag N' Bag), what they promise (a cleaner yard all season, you stay warm inside), believes they love dogs, and texts for a free quote.
-FIRST VIEWPORT: Paper header with the paw mark and wordmark left and the tap-to-call number top right. Hero on their own yard photo (the dog from their ad) under a brown overlay: eyebrow "Dog waste removal", "We scoop the poop so you don't have to.", one promise line, two pill buttons (Get a free quote, Text us).
+THESIS: A small, friendly pet-waste crew that earns trust the way their own posts do: warm, plain and a little playful. One claim in their own words (we scoop the poop so you don&rsquo;t have to), three plain promises, and an easy way to get on the schedule by text.
+OWN-WORLD: Their own logo: the umber paw (#523c16) and taupe stripes (#cdc2b2) on warm paper (#f7f3ec), with a deeper umber (#33260d, faint diagonal lines) for dark bands and one caramel accent (#e8a64a, fills only; #8a520f as text on light). Cal Sans display, system body at 16/1.7. Kept clearly apart from NJ Scatman&rsquo;s green and mustard.
+STORY: The visitor sees who scoops (Wag N&rsquo; Bag), what they promise (a cleaner yard all season, you stay warm inside), believes they love dogs, and texts for a free quote.
+FIRST VIEWPORT: Paper header with the paw mark and wordmark left and the tap-to-call number top right. Hero on their own yard photo (the dog from their ad) under a brown overlay: eyebrow "Dog waste removal", "We scoop the poop so you don&rsquo;t have to.", one promise line, two pill buttons (Get a free quote, Text us).
 FORM: calm band system (after lpmr.co.uk) with a photo hero. No place in the H1: the brief says not to publish a location.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, DESIGN.md and HANDOFF.md
 -->
@@ -248,7 +270,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 </svg>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#" aria-label="Wag N' Bag Dog Waste Removal, back to top"><img src="img/paw.png" width="48" height="48" alt=""><span class="nm"><b>Wag N' Bag</b><span>Dog Waste Removal</span></span></a>
+    <a class="brand" href="#top" aria-label="Wag N&rsquo; Bag Dog Waste Removal, back to top"><img src="img/paw.png" width="48" height="48" alt=""><span class="nm"><b>Wag N&rsquo; Bag</b><span>Dog Waste Removal</span></span></a>
     <a class="tel" href="tel:+16094674064"><svg aria-hidden="true"><use href="#i-phone"/></svg>(609) 467-4064</a>
   </div>
 </header>
@@ -261,8 +283,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </picture>
   <div class="wrap hero-copy">
     <p class="eyebrow">Dog waste removal</p>
-    <h1 id="h1">We scoop the poop <span class="accent">so you don't have to.</span></h1>
-    <p class="promise">Stay cozy inside. <b>We'll handle the dirty work,</b> all season long.</p>
+    <h1 id="h1">We scoop the poop <span class="accent">so you don&rsquo;t have to.</span></h1>
+    <p class="promise">Stay cozy inside. <b>We&rsquo;ll handle the dirty work,</b> all season long.</p>
     <div class="actions">
       <a class="btn btn-primary" href="#ask">Get a free quote</a>
       <a class="btn btn-ghost" data-sms href="sms:+16094674064?&amp;body=Hi%20Wag%20N'%20Bag!%20I%20found%20your%20website%20and%20I'd%20like%20a%20free%20quote%20for%20my%20yard."><svg aria-hidden="true"><use href="#i-chat"/></svg>Text us</a>
@@ -273,8 +295,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="on-paper" aria-labelledby="h-why">
   <div class="wrap split">
     <div class="rise">
-      <h2 id="h-why">A clean yard means <span class="accent">more tail wags.</span></h2>
-      <p class="lede" style="margin-top:16px">We love making your furry friends happy. You get more worry-free playtime, and you never have to bundle up and go hunting for yard bombs again.</p>
+      <h2 id="h-why">A clean yard means more tail wags.</h2>
+      <p class="lede gap">We love making your furry friends happy. You get more worry-free playtime, and you never have to bundle up and go hunting for yard bombs again.</p>
     </div>
     <ul class="claims">
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7v12l16 16 14-14L19 5H7a2 2 0 0 0-2 2z"/><circle cx="13" cy="13" r="2.5"/></svg>Free quotes</li>
@@ -294,7 +316,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <ol class="steps">
       <li class="rise"><div><b>Text or call for your free quote.</b><span>Tell us about your yard and your dogs.</span></div></li>
       <li class="rise"><div><b>We get you on our schedule.</b><span>So it never has a chance to pile up.</span></div></li>
-      <li class="rise"><div><b>Enjoy a cleaner yard.</b><span>More tail wags, and more time to stay cozy.</span></div></li>
+      <li class="rise"><div><b>Enjoy a cleaner yard.</b><span>More tail wags, and less to step around.</span></div></li>
     </ol>
   </div>
 </section>
@@ -304,13 +326,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="head rise">
       <p class="eyebrow">Free quote</p>
       <h2 id="h-ask">Get on our schedule</h2>
-      <p class="lede">Don't wait until the cold really sets in.</p>
+      <p class="lede">Don&rsquo;t wait until the cold really sets in.</p>
     </div>
     <form id="quoteForm" class="rise" novalidate>
       <div class="field" id="f-name">
         <label for="name">Your name</label>
-        <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
-        <p class="err" id="e-name">Add your name so we know who's texting.</p>
+        <input type="text" id="name" name="name" autocomplete="name" maxlength="60" aria-required="true" placeholder="First name is fine" aria-describedby="e-name">
+        <p class="err" id="e-name">Add your name so we know who&rsquo;s texting.</p>
       </div>
       <fieldset class="field">
         <legend>How many dogs? <small>(optional)</small></legend>
@@ -338,7 +360,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <textarea id="note" name="note" maxlength="600" placeholder="Gate on the side, big backyard…"></textarea>
       </div>
       <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to us</button>
-      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call or text us at <a href="tel:+16094674064">(609) 467-4064</a>.</p>
+      <p class="sent" id="sent" role="status" hidden>Didn&rsquo;t open your messages? Call or text us at <a href="tel:+16094674064">(609) 467-4064</a>.</p>
       <p class="after">Opens your messages with this written out.</p>
     </form>
   </div>
@@ -346,10 +368,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <section class="on-brown close" id="close" aria-labelledby="h-close">
   <div class="wrap">
-    <div class="logo-card rise"><img src="img/logo.webp" width="148" height="148" alt="Wag N' Bag Dog Waste Removal logo" loading="lazy"></div>
+    <div class="logo-card rise"><img src="img/logo.webp" width="148" height="148" alt="Wag N&rsquo; Bag Dog Waste Removal logo" loading="lazy"></div>
     <div class="rise">
-      <h2 id="h-close">Wag N' Bag Dog Waste Removal</h2>
-      <p class="who">Happy dogs, clean yards, and more time to stay cozy.</p>
+      <h2 id="h-close">Wag N&rsquo; Bag <span class="nw">Dog Waste Removal</span></h2>
+      <p class="who">Happy dogs and clean yards.</p>
       <p class="area">Not sure we come to your street? Call or text and ask.</p>
     </div>
     <a class="bigtel rise" href="tel:+16094674064"><svg aria-hidden="true"><use href="#i-phone"/></svg>(609) 467-4064</a>
@@ -359,14 +381,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <footer>
   <div class="wrap">
-    <span>Wag N' Bag Dog Waste Removal · <span class="nw">(609) 467-4064</span></span>
+    <span>Wag N&rsquo; Bag Dog Waste Removal · <span class="nw">(609) 467-4064</span></span>
     <nav aria-label="Contact">
       <a href="https://www.facebook.com/profile.php?id=61573080741211" rel="noopener">Facebook</a>
     </nav>
   </div>
 </footer>
 
-<a class="float" id="float" data-sms href="sms:+16094674064?&amp;body=Hi%20Wag%20N'%20Bag!%20I%20found%20your%20website%20and%20I'd%20like%20a%20free%20quote%20for%20my%20yard." aria-label="Text Wag N' Bag"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+<a class="float" id="float" data-sms href="sms:+16094674064?&amp;body=Hi%20Wag%20N'%20Bag!%20I%20found%20your%20website%20and%20I'd%20like%20a%20free%20quote%20for%20my%20yard." aria-label="Text Wag N&rsquo; Bag"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
 
 <script>
 /* ===== Config ===== */
@@ -400,7 +422,10 @@ document.documentElement.classList.add('js');
   if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
 })();
 
-/* ===== Quote form: composes a text to Wag N' Bag ===== */
+/* ===== On computers sms: links often do nothing; say how to text instead ===== */
+if(matchMedia('(hover:hover) and (pointer:fine)').matches)[].forEach.call(document.querySelectorAll('[data-sms]'),function(a){a.title='Text (609) 467-4064 from your phone'});
+
+/* ===== Quote form: composes a text to Wag N\' Bag ===== */
 (function(){
   var form=document.getElementById('quoteForm');if(!form)return;
   function val(id){return document.getElementById(id).value.trim()}

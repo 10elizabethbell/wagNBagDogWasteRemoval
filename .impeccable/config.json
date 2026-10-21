@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T15:52:33.925Z",
+        "reason": "Ellie's house calm band style (pitch-site calm-photo-style.md item 2) mandates the faint 135deg line texture on deep bands"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "rgb(247, 243, 236)",
+        "createdAt": "2026-10-21T15:52:33.987Z",
+        "reason": "pitch-site calm style requires an off-white paper ground; warm tint taken from the client's logo whites (Ellie's house style, not a reflex)"
+      }
+    ]
+  }
+}
