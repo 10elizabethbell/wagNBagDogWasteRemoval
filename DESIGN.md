@@ -58,7 +58,18 @@ typography:
     fontSize: "18px"
     fontWeight: 400
     lineHeight: 1
+  step-title-desktop:
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
+    fontSize: "22px"
+    fontWeight: 400
+    lineHeight: 1.2
+  note:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif"
+    fontSize: "15px"
+    fontWeight: 400
+    lineHeight: 1.7
 rounded:
+  focus: "6px"
   field: "10px"
   panel: "20px"
   card: "24px"
